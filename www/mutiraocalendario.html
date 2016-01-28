@@ -1,0 +1,131 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.theme.min.css" />
+      <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">      
+      <title>Arborização 50K</title>
+        
+    </head>
+    <body>
+   
+
+        <!-- Menu da aplicação -->
+      <nav class="navbar navbar-default navbar" id="navbar-menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navegacao" >
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                
+                <a class="navbar-brand" href="index.html">Arborização 50K</a>
+            </div>  
+            
+            <div class="collapse navbar-collapse menu-navegacao" id="menu-navegacao">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#page-top"></a></li>
+                    <li>
+                        <a class="" href="novaguardiaoplanta.html">Guardião</a>
+                    </li>
+                    <li>
+                        <a class="" href="timeline.html">TimeLine</a>
+                    </li>
+                    <li>
+                        <a class="" href="mutiraocalendario.html">Mutirões</a>
+                    </li>
+                    <li>
+                        <a class="" href="problema.html">Problema</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+      </nav>
+      <!-- // Menu da aplicação -->
+      
+        
+
+         <!-- Publicações -->
+       
+            <div class="page card card-container">
+          <div class="container">
+
+              <div class="row col-md-12">
+                  <div class="page-header">
+                    <h1 style="color:#8db698"><b>Mutirão A</b></h1>
+
+                     <a class="fa fa-facebook-square fa-2x" href="#" role="button"></a>
+                     <a class="fa fa-linkedin-square fa-2x" href="#" role="button"></a>
+                     <a class="fa fa-google-plus-square fa-2x" href="#" role="button"></a>
+                  </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                      <div class="col-sm-4">
+                          <div><img src="img/foto3.jpg" class="img-responsive"/></div>
+                      </div>
+                      <div class="col-sm-8">                        
+                          <p>Data: 02/02/2016</p> 
+                          <p>Hora: 15:00</p> 
+                          <p>Endereço: Pq. das Águas</p>                    
+                          <button class="btn btn-success" onclick="org();" id="btn-org" type="button">Organizador Voluntário</button>
+                      </div>
+                </div>
+              </div>
+            </div>
+   
+      <!-- // Publicações -->  
+     
+          <div class="container">
+              <div class="row col-md-12">
+                <h1 style="color:#8db698">Outros mutirões</h1> 
+
+                <div class="col-sm-4">
+                          <div><img src="img/foto3.jpg" class="img-responsive"/><a  href="mutiraocalendario.html" role="text"><h2>Mutirão<h2></a></div>
+                </div>
+                <div class="col-sm-4">
+                          <div><img src="img/foto3.jpg" class="img-responsive"/><a  href="mutiraocalendario.html" role="text"><h2>Mutirão<h2></a></div>
+                </div>
+                <div class="col-sm-4">
+                          <div><img src="img/foto3.jpg" class="img-responsive"/><a  href="mutiraocalendario.html" role="text"><h2>Mutirão<h2></a></div>
+                </div>
+              </div>               
+          
+     </div>
+   </div>
+                                
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+           
+            app.initialize();
+
+             document.addEventListener("deviceready", onDeviceReady, false);
+
+             function showAlert(mensage,callback) {
+                   navigator.notification.alert(
+                        mensage,callback,'Informação','OK'             
+                    );
+                }
+
+            function showAlertBeep(mensage,callback,qtdbeep) {
+                    navigator.notification.beep(qtdbeep);
+                    showAlert(mensage,callback);
+                    }    
+            
+
+
+    </script>
+
+    </body>
+  </html>
