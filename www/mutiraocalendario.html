@@ -57,7 +57,7 @@
          <!-- Publicações -->
        
             <div class="page card card-container">
-          <div class="container">
+          <div class="content-block">
 
               <div class="row col-md-12">
                   <div class="page-header">
@@ -78,7 +78,7 @@
                           <p>Data: 02/02/2016</p> 
                           <p>Hora: 15:00</p> 
                           <p>Endereço: Pq. das Águas</p>                    
-                          <button class="btn btn-success" onclick="org();" id="btn-org" type="button">Organizador Voluntário</button>
+                          <button class="btn btn-success notification-default"  type="button">Organizador Voluntário</button>
                       </div>
                 </div>
               </div>
@@ -107,23 +107,18 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-           
-            app.initialize();
 
-             document.addEventListener("deviceready", onDeviceReady, false);
-
-             function showAlert(mensage,callback) {
-                   navigator.notification.alert(
-                        mensage,callback,'Informação','OK'             
-                    );
-                }
-
-            function showAlertBeep(mensage,callback,qtdbeep) {
-                    navigator.notification.beep(qtdbeep);
-                    showAlert(mensage,callback);
-                    }    
-            
-
+        var myApp = new Framework7(); 
+        var mainView = myApp.addView('.view-main');
+         
+        var $$ = Dom7;
+         
+        $$('.notification-default').on('click', function () {
+            myApp.addNotification({
+                title: 'Framework7',
+                message: 'Você não é um organizador volutário deste mutirão'
+            });
+        });
 
     </script>
 
